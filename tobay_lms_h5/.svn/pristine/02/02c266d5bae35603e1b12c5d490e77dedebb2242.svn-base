@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="fav.png">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache" content="no-cache">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css?v=7718052b46" media="screen" />
+    <link rel="stylesheet" href="css/reset.css?v=cc3c24d88f">
+    <link rel="stylesheet" href="font/iconfont.css?v=ff28547f38">
+    <link rel="stylesheet" href="css/style.css?v=863e8bbd70">
+    <link rel="stylesheet" href="css/alert.css?v=5b585de169">
+</head>
+<body class='bgF7'>
+   <div class="header">
+        <div class="container">
+            <div class="row">
+                <p class="fl logoBox">
+                    <a href='index.html'> <img src="images/newLogo.png?v=947c3cac96" alt=""></a>
+                </p>
+                <div class="fl tabBox" id='tabB'>
+
+                    <ul>
+                        <li><a href='index.html'>首页</a></li>
+                        <li><a href='lesson.html'>课程</a></li>
+                        <li><a href='zixun.html'>政策解读</a></li>
+                        <li><a href='about.html#/about/about'>关于我们</a></li>
+                    </ul>
+                </div>
+
+                <div class="header_r fr">
+                    <a href="entro.html" target="_blank" class="noBor fl tFunBtn">企业/机构入口</a>
+                    <i class='gap'></i>
+                    <div class="toGwc fl">
+                        <li class="shop-cart" id="shop-cart">
+
+                            <a href="gwc.html" class="shop-cart-icon" target="_blank">
+                                <span class="iconfont icon-gouwuche"></span><span>购物车</span><span class="shopping_icon js-cart-num">0</span>
+                            </a>
+                            <div class="my-cart" id="js-my-cart">
+                                
+                                <div class="cart-title-box clearfix">
+                                    <h2 class="fl">我的购物车</h2>
+                                    <h5 class="fr">已加入<span class="js-incart-num">0</span>门课程</h5>
+                                </div>
+                               
+                                <div class="cart-wrap">
+                                    <div class="clear-cart"> 
+                                            <span class="cartIcon icon-shopping-cart"></span>
+                                            <h3>购物车里空空如也</h3>    
+                                            <div class="text">快去选购你中意的课程</div>                                            
+                                            <p><a class="go-link" href="lesson.html?ftype=1" target="_blank">选择课程</a></p>                                            
+                                    </div>     
+                                    <div class="cart-wrap-box" id="js-card-ul">
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                                <div class="more-box clearfix">
+                                    <div class="l show-box"><span class="text"><a class="orderCenter" target="_blank">我的订单中心</a></span></div>
+                                    <a href="gwc.html" target="_blank" class="fr moco-btn moco-btn-red go-cart">去购物车结算</a>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </div>
+                    <i class='gap'></i>
+                    <div class="noLogin">
+                        <a href="login.html" class="login fl tFunBtn">登录</a>
+                        <i class='gap'></i>
+                        <a href="register.html" class="fl tFunBtn">注册</a>
+                    </div>
+                    <div class="hasLogin">
+                          <a href="notice.html"><span class='iconfont icon-lingdang fl'><i id='count'></i></span></a>
+                          <div class="fr avatar" id="headAva">
+                              <a class='toMy'><img src="" class="uerAvater"></a>
+                              <div class="g-user-card">
+                                  <div class="card-top clearfix">                            
+                                      <a href="javascript:;" class="l">
+                                          <img src="">
+                                      </a>                            
+                                  <div class="card-top-right-box l">                                
+                                      <a href="javascript:;"><span class="name text-ellipsis"></span></a>                                
+                                                           
+                                  </div>                       
+                                </div>
+                                 <div class="user-center-box">                            
+                                      <ul class="clearfix">                                
+                                            <li class="l"><a class='toMy' target="_blank"><span class="iconfont icon-gerenzhongxin"></span>个人中心</a></li>                                
+                                            <li class="l"><a href="myOrder.html#/order/order" target="_blank"><span class="iconfont icon-dingdan"></span>订单中心</a> </li>
+                                      </ul>                       
+                                 </div>
+                                 <div class="card-sets clearfix"><a href="login.html">安全退出</a></div>
+
+                              </div>
+                          </div>
+                      </div>
+
+                </div>
+              
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="perWrap querBox">
+                <div class="perWrap_l querBox_l fl col-lg-2-half col-md-2-half col-sm-2-half col-xs-12">
+                    <ul class='colist aboutS' id="aboutS">
+                    </ul>
+
+                </div>
+                <div class="perWrap_r fr quer_info col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div id='aboutUrl'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fotter"></div>
+    <script src="js/jquery/jquery.min.js?v=b2efb4de6a"></script>
+    <script src='js/fenye/jqPaginator.js?v=8a570b62bb'></script>
+    <script src="js/map/mapInit.js?v=abf5aec227"></script>
+    <script src="js/map/map.js?v=e401a3e580"></script>
+    
+    <script src="js/jquery/path.js?v=7336100f61"></script>
+    <script src="js/jquery/load.js?v=821a4a6380"></script>
+    <script src="js/alert/alert.js?v=f92d748d0d"></script>
+    <!--[if lt IE 9]>
+        <script src="js/jquery/ajaxTransport.js?v=9e209f6c54"></script>
+         <script src="js/common/html5shiv.min.js?v=1087e690a7"></script>
+        <script src="js/common/respond.min.js?v=78915bb8b3"></script>
+        <![endif]-->
+    
+    <script src="config.js?v=06fd566dc7"></script>
+     <script src="js/common/common.js?v=800f6b0ee4"></script>
+     <script src="js/page/about.js?v=8db0650eda"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+  <!-- 合作企业 -->
+<div class="perBox">
+<div class="perWrap_tit"><span id="hezuoComTit"></span></div>
+<div class="qwBox" >
+	<li class="borbN" id="hezuoCom"></li>
+</div>
+</div>

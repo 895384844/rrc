@@ -1,0 +1,12 @@
+<!-- 关于我们 -->
+<div class="perBox show">
+    <div class="perWrap_tit">
+        <span id="usCoytit">关于我们</span>
+    </div>
+    <div class="qwBox ">
+			<div class="usBg">
+				<img src="images/aboutBg.png" alt="">
+			</div>
+			<div class="company usCoy" id="usCoy"></div>
+    </div>
+</div>

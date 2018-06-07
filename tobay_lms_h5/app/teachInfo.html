@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class='indexHtml'>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <link rel="stylesheet" href="../css/flexible.css?v=2f3507b9f0">
+    <style>
+        .tcinfo {
+            padding-top: 0.653333rem;
+            width: 92%;
+            margin: 0 auto;
+        }
+        
+        .tcinfo .avater {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .tcinfo .avater img {
+            width: 2.133333rem;
+            height: 2.133333rem;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        
+        .tc_name {
+            color: #323232;
+            font-weight: bold;
+            margin-top: 0.4rem;
+            margin-bottom: 0.8rem;
+            text-align: center;
+        }
+        
+        .tcCon {
+            color: #323232;
+            font-size: 0.346667rem;
+            line-height: 0.666667rem;
+            text-indent: 2em;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tcinfo">
+        <p class="avater"><img src="" alt=""></p>
+        <p class="tc_name"></p>
+        <div class="tcCon"></div>
+    </div>
+    <div class="nods">暂无数据</div>
+    <script src='../js/app/flexible.js?v=8f16100cba'></script>
+    <script src="../js/app/jquery-3.1.0.min.js?v=05e51b1db5"></script>
+    <script src="../config.js?v=06fd566dc7"></script>
+    <script src="../js/common/common.js?v=800f6b0ee4"></script>
+    <script>
+        var zId = getSearch('teacherId');
+        var tc_obj = new Object();
+        tc_obj.coursewareId = zId;
+        commonParm(tc_obj);
+        jsonAjax(InterFace.askTeacher, tc_obj, zxInfo_fn);
+        function zxInfo_fn(res) {
+            if (res.errCode == '200') {
+                $(".avater img").attr('src', res.tricon)
+                $('.tc_name').html(res.trname);
+                $('.tcCon').html(res.trabstract);
+
+            } else if (res.errCode == '306') {
+                $('.tcinfo').hide();
+                $('.nods').show();
+
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>

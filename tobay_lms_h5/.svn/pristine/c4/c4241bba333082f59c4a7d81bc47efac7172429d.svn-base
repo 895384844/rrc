@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>处理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="fav.png">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		.chuBox{
+			width:100%;
+			height:100%;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<div class="chuBox">
+		<img src="images/loa.gif?v=879843c2d3" alt="">
+		<p>正在处理,请稍后...</p>
+	</div>
+	<script src="js/jquery/jquery.min.js?v=b2efb4de6a"></script>
+	<script src="js/alert/alert.js?v=f92d748d0d"></script>
+	<script src="config.js?v=06fd566dc7"></script>
+     <script src="js/common/common.js?v=800f6b0ee4"></script>
+	<script>
+
+	var M={};
+	if(getSearch('bty')!==undefined&&getSearch('bty')!==''&&getSearch('bty')!=='undefined'&&getSearch('bty')!=='null'&&getSearch('bty')!==null){
+		
+		var code=getSearch('code');
+		var wxBoundType=getSearch('bty');
+		var bindObj=new Object();
+		bindObj.code=code;
+		bindObj.wxBoundType=wxBoundType;
+		commonParm(bindObj)
+		console.log(bindObj);
+		jsonAjax(InterFace.boundWx, bindObj, bindWx_fn);
+
+	}else{
+		var code=getSearch('code');
+		var wxCodeObj=new Object();
+		wxCodeObj.code=code;
+		commonParm(wxCodeObj);
+  		jsonAjax(InterFace.getWx, wxCodeObj, getWx_fn);
+		
+	}
+	function getWx_fn(res){
+		if(res.errCode=='200'){
+			if(res.loginType=='1'){
+				var openid=res.openid;
+				var iconUrl=res.iconUrl;
+				var sex=res.sex;
+				var url="bind.html?openid="+openid+"&iconUrl="+iconUrl+"&sex="+sex;
+				window.location.href=url;
+				
+			}else if(res.loginType=='2'){
+				addCookie('userId', res.userId, 0);
+	            addCookie('username', res.username, 0);
+	            addCookie('password', res.password, 0);
+	            addCookie('userType', res.userType, 0);
+	            addCookie('staffid', res.staffid, 0);
+	            addCookie('enterpriseId', res.enterpriseId, 0);
+	            addCookie('enterpriseName', res.enterpriseName, 0);
+	            addCookie('staffName', res.staffName, 0);
+	            addCookie('loginType', 'no', 0);
+	            addCookie('token', res.token, 0);
+	            addCookie('userImg', res.imgUrl, 0);
+            	addCookie('nickName', res.nickName, 0);
+	            jumpUrl("index.html");
+
+
+
+
+			}
+		}else if(res.errCode=='312'){
+			// 用户封禁
+			M.dialog1 = jqueryAlert({
+	            'content': '用户账号封禁',
+	            'closeTime': 1000,
+	            'modal': true
+	        });
+
+		}else if(res.errCode=='309'){
+			// 用户不存在
+			M.dialog1 = jqueryAlert({
+	            'content': '用户不存在',
+	            'closeTime': 1000,
+	            'modal': true
+	        });
+		}
+
+		   
+	}
+	function bindWx_fn(res){
+		console.log(res);
+		if(res.errCode=='200'){
+			var url="my.html#/mysort/info";
+			jumpPage(url);
+
+		}else if(res.errCode=='400'){
+			M.dialog1 = jqueryAlert({
+	            'content': '系统错误，请联系管理员',
+	            'closeTime': 1000,
+	            'modal': true
+	        });
+		}
+	}
+	
+
+	</script>
+</body>
+</html>

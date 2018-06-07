@@ -1,0 +1,144 @@
+<!-- 收藏 -->
+<div class="perBox mycourse">
+    <div class="perWrap_tit">
+        <ul class='tabSwitch clearfix fl'>
+            <li class="active">最近学习</li>
+            <li>我的收藏</li>
+            <li>我的上传</li>
+            <li>我的购买</li>
+        </ul>
+    </div>
+    <div class="swCon show">
+        <div class="perWlist zuji">
+            <div class="tabCon show">
+
+                <div class="tabConlist">
+                    <ul class="conBox " id='hikeList'>
+
+                    </ul>
+                    <ul class="pages page_sml" id="page_m"></ul>
+                </div>
+            </div>
+            <div class="nodata">你还没有历史足迹，可以先 <a href="lesson.html" target="_blank">去学习课程</a>
+            </div>
+
+        </div>
+        <div class="loadings" id="zujiLoading">
+                <img src="images/load.gif" alt="">
+            </div>
+    </div>
+    <div class="swCon">
+          <div class="perWlist schang">
+            <div class="tabCon show">
+                <div class="tabConlist">
+                    <ul class="conBox " id='scList'></ul>
+                    <ul class="pages page_sml" id="page_sc"></ul>
+                </div>
+                <div class="nodata">你还没有收藏记录，可以先 <a href="lesson.html" target="_blank">去找找课程，访问详情收藏</a>
+                </div>
+            </div>
+
+        </div>
+      <div class="loadings" id='scLoading'>
+          <img src="images/load.gif" alt="">
+      </div>
+    </div>
+    <div class="swCon">
+          <div class="txCenter">
+              <div class="tx_thead">
+                      <div class="tx_thead_b clearfix">
+                        <div class="item-2">课程</div>
+                          <div class="item-3">购买量</div>
+                          <div class="item-4">可提现金额</div>
+
+                      </div>
+                  </div>
+
+                    <div class="tx-body">
+                        <div id="upload-table" class="cart-body-table"></div>
+                        <ul class="pages page_sml fl" id="page_tx"></ul> <a href="javascript:;" class="pBtn pBtn_blue mr7 sava fr mt0" id="txBtn">立即提现</a>
+                  </div>
+          </div>
+        <div class="nodata">你还没有上传，可以先 <a href="lesson.html" target="_blank">去学习课程</a></div>
+         <div class="loadings" id='txLoading'>
+            <img src="images/load.gif" alt="">
+        </div>
+  </div>
+      <div class="swCon">
+        <div class="perWlist gm">
+            <div class="tabCon show">
+
+                <div class="tabConlist">
+                    <ul class="conBox " id='gmList'>
+
+                    </ul>
+                    <ul class="pages page_sml" id="page_gm"></ul>
+                </div>
+            </div>
+            <div class="nodata">你还没有购买，可以先 <a href="lesson.html" target="_blank">去学习课程</a>
+            </div>
+
+        </div>
+        <div class="loadings" id="gmLoading">
+                <img src="images/load.gif" alt="">
+            </div>
+    </div>
+  <!-- 弹窗部分 -->
+<div class="alertBox alertBox2 binbBk">
+  <div class="shadow"></div>
+  <div class="alertCon">
+    <i class="closed"><img src="images/bank_ico4.png" alt=""></i>
+    <div class="tixinBox">
+      <h4><img src="images/bank_ico1.png" alt=""></h4>
+      <p class="ti_tip">您还没有绑定银行卡，请先去绑定银行卡</p>
+      <p><a href="javascript:;" class="txBtn bi_bank">绑定银行卡</a></p>
+    </div>    
+
+  </div>
+
+</div>
+
+
+<div class="alertBox alertBox2 tx_succ" >
+  <div class="shadow"></div>
+  <div class="alertCon">
+    <i class="closed"><img src="images/bank_ico4.png" alt=""></i>
+    <div class="tixinBox">
+      <h4><img src="images/bank_ico2.png" alt=""></h4>
+      <p class="ti_tc">提现成功</p>
+      <p class="ti_ti">您已成功提现 ￥<i class="money"></i> 至 银行卡 <i class="bankCard"></i></p>
+      <p class="ti_ti2">预计到账时间为7~15个工作日。</p>
+      <p><a href="javascript:;" class="txBtn iKnow">我知道了</a></p>
+    </div>    
+
+  </div>
+
+</div>
+<div class="alertBox alertBox2 tx_list" >
+  <div class="shadow"></div>
+  <div class="alertCon">
+    <p class="nodata">暂无可提现的课程</p>
+    <input type="hidden" id="txid">
+    <input type="hidden" id="txmoney">
+    <i class="closed"><img src="images/bank_ico4.png" alt=""></i>
+    <div class="txbox">
+        <h4>提现金额</h4>
+        <p class="txPrice"><i>￥</i><i class="yuan"></i></p>
+        <table id="txlist_table">
+          <thead>
+            <tr>
+              <th>课件名称</th>
+              <th>收益</th>
+
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <input type="button" class="txBtn confirmtx" value="确认提现">
+  </div>
+</div>
+</div>
+
+<script src='js/fenye/jqPaginator.js?v=8a570b62bb'></script>
+<script src='js/page/shoucang.js?v=cd7a9fac68'></script>
+

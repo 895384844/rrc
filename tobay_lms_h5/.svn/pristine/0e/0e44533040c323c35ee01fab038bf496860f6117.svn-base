@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="fav.png">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <title>微信绑定</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css?v=7718052b46" media="screen" />
+    <link rel="stylesheet" href="css/reset.css?v=cc3c24d88f">
+    <link rel="stylesheet" href="css/style.css?v=863e8bbd70">
+    <link rel="stylesheet" href="css/alert.css?v=5b585de169">
+   
+  
+</head>
+
+<body>
+    <div id='userBox' class="bindBox">
+
+    <div class="container">
+    <div class="row">
+        <div class="infoBox">
+            <div class="ifolist clearfix">
+                <span class="fl regost active">微信绑定</span>
+
+            </div>
+
+            <div class="formBox" id="form_no">
+                <form id="signupForm" method="post" action="">
+                    <span id="phone_input">
+                        <input type="text" placeholder="请输入手机号" id='phone' name="mobile" maxLength="11" value="" class='form_v'>
+                    </span>
+                    <span id='phoneVer_input'><input type="text" placeholder="请输入手机验证码" id='phone_verfy' class='form_v'></span>
+
+                     <input type="button" class='getPhoneVer' id='getPhone' value="获取手机验证码">
+                    <input type="button" class="usualBtn regBtn mt40 mb40" id='ptReg' value='提交'>
+                </form>
+
+            </div>
+            <div class="formBox" id="form_ie">
+                <form id="signupForm" method="post" action="">
+                    <label for=""><em>手机号:</em>
+                    <span id="phone_input">
+                        <input type="text" id='phone' name="mobile" maxLength="11" value="" class='form_v'>
+                    </span>
+                    </label>
+                    <label for=""><em>手机验证码</em><input type="button" class='getPhoneVer' id='getPhone' value="获取手机验证码"><span id='phoneVer_input'><input type="text" id='phone_verfy' class='form_v'></span></label>
+                    <input type="button" class="usualBtn regBtn mt40 mb40" id='ptReg' value='提交'>
+                </form>
+
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+</div>
+
+    
+    <script src="js/jquery/jquery.min.js?v=b2efb4de6a"></script>
+    <script src='js/jquery/validate.js?v=4006f17175'></script>
+    <script src="js/alert/alert.js?v=f92d748d0d"></script>
+    <!--[if lt IE 9]>
+    <script src="js/jquery/ajaxTransport.js?v=9e209f6c54"></script>
+     <script src="js/common/html5shiv.min.js?v=1087e690a7"></script>
+     <script src="js/common/respond.min.js?v=78915bb8b3"></script>
+    <![endif]-->
+    <script src="config.js?v=06fd566dc7"></script>
+     <script src="js/common/common.js?v=800f6b0ee4"></script>
+     <script src="js/page/wxBind.js?v=66df33a877"></script>
+    
+</body>
+
+</html>

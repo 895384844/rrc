@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/flexible.css?v=2f3507b9f0">
+    <title>分享课程</title>
+</head>
+
+<body class="shareBody">
+    <div id="rismPlayer" class="alve-player"></div>
+    <div class="ui-tab content-container">
+            <ul class="ui-tab-nav">
+                <li class="current"><a>详情</a></li>
+                <li class=""><a>章节</a></li>
+            </ul>
+            <ul class="ui-tab-content">
+                <li class="info-list show">
+                    <h3 class="corname"></h3>
+                    <p class="timeDuration"><em>课程时长：</em><em id="corHour"></em></p>
+                    <p class="desc"</p>
+                    <p class="line"></p>
+                    <div class="teachInfo"><img src="" alt=""><span><em>主讲人：</em><em class="teaName"></em></span></div>
+                    
+                </li>
+                <li class="play-list">
+                    <div class="lessItem" id="lessItem"> </div>
+                </li>
+            </ul>
+        </div>
+        <div class="downTip clearfix">
+            <img src="../images/share/logo.png?v=d7dd8d52f5" class="fl">
+            <div class="fl clearfix">
+                <h4>人人创培训监管服务平台APP</h4>
+                <h5>免费在线学习 提升员工素质</h5>
+            </div>
+            <a class="fr" href="javascript:void();" id="J-call-app">打开APP</a>
+            <input id="J-download-Adr" type="hidden" name="Adr" value="http://app.qq.com/#id=detail&appid=1106558329">
+            <input id="J-download-IOS" type="hidden" name="IOS" value="https://itunes.apple.com/**">
+        </div>
+<!-- 弹窗 -->
+<div class="alertBox" id="tip">
+    <div class="shadow"></div>
+    <div class="alertCon">
+        <h4>立即下载</h4>
+        <h4>人人创培训监管服务平台APP</h4>
+        <h5>更多好课免费看</h5>
+        <div class="alert-btn-box">
+            <a class="alert-btn-p cancel">暂不下载</a>
+            <a class="alert-btn-p">立即下载</a>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="../js/video/aliplayer.js?v=3ce0952a65"></script>
+   <script src='../js/app/flexible.js?v=8f16100cba'></script>
+    <script src="../js/app/jquery-3.1.0.min.js?v=05e51b1db5"></script>
+    <script src="../config.js?v=06fd566dc7"></script>
+    <script src="../js/common/common.js?v=800f6b0ee4"></script>
+    <script src="../js/page/share.js?v=84cef414cd"></script>
+    <script src="../js/page/wx.js?v=7c6c9ae388"></script>
+</body>
+
+
+</html>

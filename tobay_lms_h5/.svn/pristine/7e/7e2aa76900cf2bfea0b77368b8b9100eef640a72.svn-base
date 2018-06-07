@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css?v=7718052b46" media="screen" />
+    <link rel="stylesheet" href="css/reset.css?v=cc3c24d88f">
+    <link rel="stylesheet" href="css/style.css?v=863e8bbd70">
+    <link rel="stylesheet" href="css/new.css?v=c1d966d4b0">
+    <style>
+	html,body{
+		height:100%;
+		overflow: hidden;
+	}
+    </style>
+</head>
+<body>
+     <div id="rismPlayer" class="alve-player"></div>
+     <script src="js/jquery/jquery.min.js?v=b2efb4de6a"></script>
+    <script type="text/javascript" src="js/video/aliplayer-min.js?v=ad09483dd9"></script>
+    <script src="config.js?v=06fd566dc7"></script>
+     <script src="js/common/common.js?v=800f6b0ee4"></script>
+    <script>
+	var curpalyer;
+	var videoUrl=getSearch('url');
+	initPlayer(videoUrl);
+	function initPlayer(videoUrl){
+			if(window.screen.width<='1366'){
+	            curpalyer = new Aliplayer({
+			        id: "rismPlayer",
+			        source: videoUrl,
+			        autoplay: true, 
+			        cover: '',
+			        width: "100%",
+			        height: '400px', 
+			        controlBarVisibility:'always'
+			    });
+	        }else{
+		     	curpalyer = new Aliplayer({
+			        id: "rismPlayer",
+			        source: videoUrl,
+			        autoplay: true, 
+			        cover: '',
+			        width: "100%",
+			        height: '700px', 
+			        controlBarVisibility:'always'
+			    });
+		   }
+		
+
+	     
+	     
+	} 
+
+
+    </script>
+</body>
+</html>

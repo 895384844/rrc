@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="fav.png">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache" content="no-cache">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css?v=7718052b46" media="screen" />
+    <link rel="stylesheet" href="css/reset.css?v=cc3c24d88f">
+    <link rel="stylesheet" href="font/iconfont.css?v=ff28547f38">
+    <link rel="stylesheet" href="css/style.css?v=863e8bbd70">
+    <link rel="stylesheet" href="css/alert.css?v=5b585de169">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <p class="fl logoBox">
+                    <a href='index.html'> <img src="images/newLogo.png?v=947c3cac96" alt=""></a>
+                </p>
+                <div class="fl tabBox" id='tabB'>
+
+                    <ul>
+                        <li><a href='index.html'>首页</a></li>
+                        <li><a href='lesson.html'>课程</a></li>
+                        <li><a href='zixun.html'>政策解读</a></li>
+                        <li><a href='about.html#/about/about'>关于我们</a></li>
+                    </ul>
+                </div>
+
+                <div class="header_r fr">
+                    <a href="entro.html" target="_blank" class="noBor fl tFunBtn">企业/机构入口</a>
+                    <i class='gap'></i>
+                    <div class="toGwc fl">
+                        <li class="shop-cart" id="shop-cart">
+
+                            <a href="gwc.html" class="shop-cart-icon" target="_blank">
+                                <span class="iconfont icon-gouwuche"></span><span>购物车</span><span class="shopping_icon js-cart-num">0</span>
+                            </a>
+                            <div class="my-cart" id="js-my-cart">
+                                
+                                <div class="cart-title-box clearfix">
+                                    <h2 class="fl">我的购物车</h2>
+                                    <h5 class="fr">已加入<span class="js-incart-num">0</span>门课程</h5>
+                                </div>
+                               
+                                <div class="cart-wrap">
+                                    <div class="clear-cart"> 
+                                            <span class="cartIcon icon-shopping-cart"></span>
+                                            <h3>购物车里空空如也</h3>    
+                                            <div class="text">快去选购你中意的课程</div>                                            
+                                            <p><a class="go-link" href="lesson.html?ftype=1" target="_blank">选择课程</a></p>                                            
+                                    </div>     
+                                    <div class="cart-wrap-box" id="js-card-ul">
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                                <div class="more-box clearfix">
+                                    <div class="l show-box"><span class="text"><a class="orderCenter" target="_blank">我的订单中心</a></span></div>
+                                    <a href="gwc.html" target="_blank" class="fr moco-btn moco-btn-red go-cart">去购物车结算</a>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </div>
+                    <i class='gap'></i>
+                    <div class="noLogin">
+                        <a href="login.html" class="login fl tFunBtn">登录</a>
+                        <i class='gap'></i>
+                        <a href="register.html" class="fl tFunBtn">注册</a>
+                    </div>
+                    <div class="hasLogin">
+                          <a href="notice.html"><span class='iconfont icon-lingdang fl'><i id='count'></i></span></a>
+                          <div class="fr avatar" id="headAva">
+                              <a class='toMy'><img src="" class="uerAvater"></a>
+                              <div class="g-user-card">
+                                  <div class="card-top clearfix">                            
+                                      <a href="javascript:;" class="l">
+                                          <img src="">
+                                      </a>                            
+                                  <div class="card-top-right-box l">                                
+                                      <a href="javascript:;"><span class="name text-ellipsis"></span></a>                                
+                                                           
+                                  </div>                       
+                                </div>
+                                 <div class="user-center-box">                            
+                                      <ul class="clearfix">                                
+                                            <li class="l"><a class='toMy' target="_blank"><span class="iconfont icon-gerenzhongxin"></span>个人中心</a></li>                                
+                                            <li class="l"><a href="myOrder.html#/order/order" target="_blank"><span class="iconfont icon-dingdan"></span>订单中心</a> </li>
+                                      </ul>                       
+                                 </div>
+                                 <div class="card-sets clearfix"><a href="login.html">安全退出</a></div>
+
+                              </div>
+                          </div>
+                      </div>
+
+                </div>
+              
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="course-class-infos pale-color">
+        <div class="w pr">
+            <div class="info-warp tc">
+                <div class="clearfix les_tit corname"></div>
+                <p class="infoIntroduce"></p>
+                <div class="info-bar tc">
+                    <div class="statics clearfix">
+                        <div class="static-item first">
+                            <span class="meta">浏览量</span>
+                            <span class="meta-value"><strong id="p_pv"></strong></span>
+                        </div>
+                        <div class="static-item static-time">
+                            <span class="meta">收藏量</span>
+                            <span class="meta-value"><strong id="p_col"></strong></span>
+                            <em></em>
+                        </div>
+                        <div class="static-item">
+                            <span class="meta">课程时长</span>
+                            <span class="meta-value"><strong id="corHour"></strong></span>
+                            <em></em>
+                        </div>
+                        <div class="static-item">
+                            <span class="meta">评分</span>
+                            <span class="meta-value"><strong id="p_scor"></strong>分</span>
+
+                            </span>
+                            <em></em>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-box">
+                    <span class="num clearfix">
+                        <span class="discount-price">
+                        <span class="baseline baseline-y">
+                        <span class="new-y">¥</span>
+                    <span class="cur-price"><b id="curprice"></b></span>
+                    </span>
+                    </span>
+
+                    </span>
+
+
+                </div>
+
+                <div class="clearfix btnwarp">
+                    <a href="javascript:;" target="_blank" class="buynow-btn" id="buy-trigger">立即购买</a>
+                    <a href="javascript:;" class="buynow-btn addcart">加入购物车</a>
+                    <a href="javascript:;" class="buynow-btn shoucang shnactive" id="sc"><i class="iconfont icon-shoucang"></i><i>收藏</i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-bg" id="js-info-bg">
+            <div class="cover-img-wrap"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="lessonBox">
+
+        <div class="lesson_s3 clearfix">
+            <ul class="lessTab clearfix">
+                <li class='active'>课程介绍</li>
+                <li class=''>章节目录</li>
+                <li id="commtab">用户评论<i></i></li>
+
+            </ul>
+            <div class="lessCon">
+                <div class="lesConlist course-infos-t show">
+                    <div class="info-video" id="curl" >
+                        <div class="shadow"></div>
+                        <div class="info-video-box">
+                            <div class="info-name corname"></div>
+                            <div class="info-desc" id="introH"></div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="container-fluid wrap3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="list_l fl col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="list_lts">
+                                        <i></i><em>为您推荐</em><i></i>
+                                    </div>
+                                    <div class="list_lm">
+                                        <ul class="sh_list clearfix" id="sortList"></ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="lesConlist">
+                    <div class="lesson_s2 clearfix lessItem">
+                        <div class="lesson_sl fl col-lg-9">
+                                <ul id="lessItem"></ul>
+                                <ul class="over">
+                                    <li>课程完结</li>
+                                </ul>
+                        </div>   
+                        <div class="lesson_sr fr col-lg-2">
+                            <div class="teacher_intro" id="teacher_intro">
+                                <img alt="">
+                                <h5></h5>
+                                <p></p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="lesConlist">
+                 <div class="lesson_s2 clearfix lessItem"> 
+                    <div class="lesson_sl fl col-lg-9">
+                    <div id="discus-publish" class='publist' ms-if="hasUser==true">
+                        <div class="innerBox clearfix">
+                            <a class="user-head">
+                                <img src="" alt="" class="uerAvater">
+                            </a>
+                            <div class="fl user-r">
+                                <h4>觉得课程怎么样？打个分吧~</h4>
+                                <div class='disscuss'><span class="star"></span><em class='function-hint'>5</em><em>分</em></div>
+                                <p><textarea name="" id="comment" rows="3" placeholder="请输入您对于本门课程的评论吧~"></textarea></p>
+
+                            </div>
+
+                            <p class='fr usualBtn publishBtn'>发表评论</p>
+
+                        </div>
+
+                    </div>
+                    <div class="other_pub">
+                        <div id="otrPub"></div>
+                        <span class='nodata'>暂无评论</span>
+
+                    </div>
+                    <div class="list_lb">
+                        <ul class="pages page_green sml fr" id="page_m"></ul>
+                    </div>
+                    </div>
+                     <div class="lesson_sr fr col-lg-2">
+                            <div class="teacher_intro" id="teacher_intro">
+                                <img alt="">
+                                <h5></h5>
+                                <p></p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="fotter"></div>
+    <script src="js/jquery/jquery.min.js?v=b2efb4de6a"></script>
+    <script src="js/jquery/jquery.fly.min.js?v=c371ce2a56"></script>
+    <script src='js/fenye/jqPaginator.js?v=8a570b62bb'></script>
+    <script src="js/page/raty.js?v=d2b7d0ce79"></script>
+    <script src="js/jquery/load.js?v=821a4a6380"></script>
+    <script src="js/alert/alert.js?v=f92d748d0d"></script>
+    <!--[if lt IE 9]>
+    <script src="js/jquery/ajaxTransport.js?v=9e209f6c54"></script>
+     <script src="js/common/html5shiv.min.js?v=1087e690a7"></script>
+     <script src="js/common/respond.min.js?v=78915bb8b3"></script>
+    <![endif]-->
+    <script src="config.js?v=06fd566dc7"></script>
+    <script src="js/common/common.js?v=800f6b0ee4"></script>
+    <script src="js/page/shou_fn.js?v=6db9759360"></script>
+    <script src="js/page/lessonInfo_fee.js?v=12528f00fe"></script>
+
+</body>
+
+</html>

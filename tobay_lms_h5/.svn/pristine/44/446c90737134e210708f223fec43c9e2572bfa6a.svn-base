@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class='indexHtml'>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <link rel="stylesheet" href="../css/flexible.css?v=2f3507b9f0">
+</head>
+    
+<body>
+<div class="aboutBox">
+	<img src="../images/us.png?v=51885dfa47" alt="" class="logo">
+	<h4>人人创培训监管服务平台</h4>
+	<div class="introc">
+		<p>人人创培训监管服务平台是一家专注“在线教育平台”的互联网公司，在国内属顶级在线教育解决方案提供商中的领跑者。</p>
+		<p> 为中、小型客户提供领先的在线教育平台方案服务。人人创培训监管服务平台是一家专注“在线教育平台”的互联网公司，在国内属顶级在线教育解决方案提供商中的领跑者。为中、小型客户提供领先的在线教育平台方案服务。人人创人力资源培训管理服务 平台是一家专注“在线教育平台”的互联网公司。</p>
+	</div>
+
+</div>
+
+<script src='../js/app/flexible.js?v=8f16100cba'></script>
+<script src="../js/app/jquery-3.1.0.min.js?v=05e51b1db5"></script>
+    <!-- <script src="../config.js?v=06fd566dc7"></script>
+    <script src="../js/common/common.js?v=800f6b0ee4"></script> -->
+   
+
+</body>
+</html>

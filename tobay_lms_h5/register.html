@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="fav.png">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <title>注册_人人创培训监管服务平台</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css?v=7718052b46" media="screen" />
+    <link rel="stylesheet" href="css/reset.css?v=cc3c24d88f">
+    <link rel="stylesheet" href="font/iconfont.css?v=ff28547f38">
+    <link rel="stylesheet" href="css/style.css?v=863e8bbd70">
+    <link rel="stylesheet" href="css/alert.css?v=5b585de169">
+    
+</head>
+
+<body>
+    <div class="mainCpn">
+        <img src="images/re1.jpg?v=47b754f003" alt="">
+    </div>
+    <div id='userBox'>
+        <div class="container" style='min-height: 680px;'>
+            <div class="row">
+                <div class="infoBox registBox" id='reg_ie'>
+                    <div class="ifolist clearfix">
+                        <span class='fl regost active'>普通用户注册</span><span class='line'></span><span class='fl regost'>企业员工注册</span>
+                        <p class='fr'><i>已有账号，</i><a href="login.html" class='colgreen'>马上登录</a><i class='gap'></i> <a href="index.html">返回首页</a></p>
+
+                    </div>
+                    <div class="formBox show ptR">
+                        <label for=""><em>输入手机号码：</em><span id='phone_input'><input type="text" id='phone' class='form_v'></span></label>
+                        <label for=""><em>输入密码：</em><span id='pass_input'><input type="password" id='password' class='form_v'></span></label>
+                        <label for=""><em>确认密码：</em><span id='confir_input'><input type="password" id='confirm_password' class='form_v'></span></label>
+                        <label for=""><em>手机验证码：</em><input type="button" class='getPhoneVer' id='getPhone' value="获取手机验证码"><span id='phoneVer_input'><input type="text" id='phone_verfy' class='form_v'></span></label>
+                        
+                        <input type="button" class="usualBtn regBtn mt40 mb40" id='ptReg' value='注册'>
+
+                    </div>
+                    <div class="formBox qyR">
+                        <label for=""><em>手机号码：</em><span id='phone_input'><input type="text" id='phone' name='phone' class='form_v'></span></label>
+                        <label for=""><em>身份证号码：</em><span id='IdCard_input'><input type="text" id='carphone' class='form_v'></span></label>
+                        <label for=""><em>企业名称：</em><span id='qySelect_input'><input type="text" value="企业名称" id='qySelect' readOnly class='form_v'></span></label>
+                        <label for=""><em>密码：</em><span id='pass_input'><input type="password" id='password' class='form_v'></span></label>
+                         <label for=""><em>确认密码：</em><span id='confir_input'><input type="password" id='confirm_password' class='form_v'></span></label>
+                         <label for=""><em>人脸识别：</em><span id='face_input'><input type="text" value="点击开启人脸识别" id='face_verfy' readOnly><input type="hidden" id='face_verfion' class='form_v'></span></label>
+                         <label for=""><em>手机验证码：</em><input type="button" class='getPhoneVer' id='qyGetPhone' value="获取手机验证码"><span id='phoneVer_input'><input type="text" id='phone_verfy' class='form_v'></span></label>
+
+                        
+                        <input type="button" class="usualBtn regBtn mt40 mb40" id='depReg' value='注册'>
+
+                    </div>
+
+
+
+                </div>
+                <div class="infoBox registBox" id='reg_no'>
+                    <div class="ifolist clearfix">
+                        <span class='fl regost active'>普通用户注册</span><span class='line'></span><span class='fl regost'>企业员工注册</span>
+                        <p class='fr'><i>已有账号，</i><a href="login.html" class='colgreen'>马上登录</a><i class='gap'></i> <a href="index.html">返回首页</a></p>
+
+                    </div>
+                    <div class="formBox show ptR">
+                        <span id='phone_input'><input type="text" placeholder="请输入手机号" id='phone' class='form_v'></span>
+                        <span id='pass_input'><input type="password" placeholder="请输入密码" id='password' class='form_v'></span>
+                        <span id='confir_input'><input type="password" placeholder="请再次输入密码" id='confirm_password' class='form_v'></span>
+                        <span id='phoneVer_input'><input type="text" placeholder="请输入手机验证码" id='phone_verfy' class='form_v'></span>
+
+                        <input type="button" class='getPhoneVer' id='getPhone' value="获取手机验证码">
+                        <input type="button" class="usualBtn regBtn mt40 mb40" id='ptReg' value='注册'>
+
+                    </div>
+                    <div class="formBox qyR">
+                        <span id='phone_input'><input type="text" placeholder="请输入手机号" id='phone' name='phone' class='form_v'></span>
+                        <span id='IdCard_input'><input type="text" placeholder="请输入身份证号码" id='carphone' class='form_v'></span>
+                        <span id='qySelect_input'><input type="text" value="企业名称" id='qySelect' readOnly class='form_v'></span>
+                        <span id='pass_input'><input type="password" placeholder="请输入密码" id='password' class='form_v'></span>
+                        <span id='confir_input'><input type="password" placeholder="请再次输入密码" id='confirm_password' class='form_v'></span>
+                        <span id='face_input'><input type="text" value="点击开启人脸识别" id='face_verfy' readOnly><input type="hidden" id='face_verfion' class='form_v'></span>
+                        <span id='phoneVer_input'><input type="text" placeholder="请输入手机验证码" id='phone_verfy' class='form_v'></span>
+
+                        <input type="button" class='getPhoneVer' id='qyGetPhone' value="获取手机验证码">
+                        <input type="button" class="usualBtn regBtn mt40 mb40" id='depReg' value='注册'>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div id='camerBox' class='alertBox'>
+            <div class="shadow"></div>
+            <div class="alertCon camCon">
+                <i class="closed"><img src="images/close1.png?v=af8b437eda" alt=""></i>
+                <div class="alert_l">
+                    <div class="realCon">
+                        <div id="webcam"></div>
+                    </div>
+                    <div class="reTip"><img src="images/nor.png?v=ccd809919f" alt="">无法拍照？<a href="vidTip.html" target="_blank">点此查看捕捉人像识别失败解决方案。</a></div>
+                    <div class="alertFooter">
+                        <input type="button" class="alertBtn" id='pickCamer' value='拍照'>
+                    </div>
+                </div>
+                <div class="alert_r">
+                    <div class="tip">
+                        <span class='num'>1</span><em>靠近摄像头，将正脸准对屏幕中央，保持画面光线充足</em>
+                    </div>
+                    <div class="tip">
+                        <span class='num'>2</span><em>点击“拍照”后，请耐心等待。</em>
+                    </div>
+                    <div class="tip avaBz">
+                        <img src="images/bz.png?v=1574243c6b" alt="" id='bz'>
+                        <div class="bigImg">
+                            <img src="images/bz.png?v=1574243c6b" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<p class='fot'>Copyright©2010-2016 人人创人力资源培训服务平台 版权所有 陕ICP备11010802011695号</p>
+    <script src="js/jquery/jquery.min.js?v=b2efb4de6a"></script>
+    <script src="js/jquery/jquery.placeholder.min.js?v=89eb166b56"></script>
+    <script src="js/jquery/resetInput.js?v=31dda47bac"></script>
+    <script src='js/jquery/validate.js?v=4006f17175'></script>
+    <script src="js/alert/alert.js?v=f92d748d0d"></script>
+    <script type="text/javascript" src="js/scriptcam/swfobject.js?v=a58a5dab99"></script>
+    <script type="text/javascript" src="js/scriptcam/scriptcam.js?v=6617e3d4ca"></script>
+    <!--[if lt IE 9]>
+     <script src="js/jquery/ajaxTransport.js?v=9e209f6c54"></script>
+     <script src="js/common/html5shiv.min.js?v=1087e690a7"></script>
+     <script src="js/common/respond.min.js?v=78915bb8b3"></script>
+    <![endif]-->
+    <script src="config.js?v=06fd566dc7"></script>
+     <script src="js/common/common.js?v=800f6b0ee4"></script>
+     <script src="js/page/register.js?v=7d55ff9a3f"></script>
+</body>
+</html>

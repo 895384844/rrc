@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="fav.png">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css?v=7718052b46" media="screen" />
+    <link rel="stylesheet" href="css/reset.css?v=cc3c24d88f">
+    <link rel="stylesheet" href="font/iconfont.css?v=ff28547f38">
+    <link rel="stylesheet" href="css/alert.css?v=5b585de169">
+    <link rel="stylesheet" href="css/style.css?v=863e8bbd70">
+
+    
+
+</head>
+
+<body>
+    <div class="header">
+        <p class="fl back_l">
+            <a><img src="images/back.png?v=65dfc9c3cd" alt=""></a>返回上一页
+        </p>
+        <div class="header_r fr" id='login_2'>
+            <a href="notice.html"><span class='iconfont icon-lingdang fl'><i id='count'>0</i></span></a>
+            <p class="fr avatar">
+                <a class="toMy"><img src="images/ava1.png?v=75a6174436" alt="" class='uerAvater'></a>
+            </p>
+        </div>
+    </div>
+    <div id="bgarea" class="video-con">
+        <div class="js-box-wrap">
+            <div id="J_Box" class="course-video-box">
+                <div id="J_prismPlayer" class="prism-player"></div>
+            </div>
+        </div>
+        <div class="section-list">
+            <div class="operator">
+                <div class="op chapter" id='opItem'>章<br>节<br>目<br>录</div>
+            </div>
+            <div class="nano has-scrollbar">
+                <h3 id='chapterName'></h3>
+                <div class="nano-content" id='ock'>
+                    <div id="ock_con"></div>
+                </div>
+            </div>
+            <div id='camerBoxs' class='alertBox'>
+                <div class="shadow"></div>
+                <div class="alertCon camCon">
+                    <i class="closed"><img src="images/close1.png?v=af8b437eda" alt=""></i>
+                    <div class="tip">
+                        <span><img src="images/nor.png?v=ccd809919f" alt=""></span><em>请您允许访问您的摄像头</em>
+                    </div>
+                    <div class="realCon">
+                        <div id="webcam"></div>
+                    </div>
+                    <div class="alertF">
+                        <input type="button" class="alertBtn" id='confirmCamer' value='确定'>
+                    </div>
+
+                </div>
+            </div>
+            <div id='tipFm' class='alertBox tipFm'>
+                <div class="shadow"></div>
+                <div class="alertCon camCon">
+                    <div class="tip">
+                        <span><img src="images/nor.png?v=ccd809919f" alt=""></span><em>学习状态正在提交，请稍后查看</em>
+                    </div>
+                    
+                    <div class="alertF">
+                        <input type="button" class="alertBtn cancel" value='确定'>
+                    </div>
+
+                </div>
+            </div>
+            <div id='tipSucc' class='alertBox tipFm'>
+                <div class="shadow"></div>
+                <div class="alertCon camCon">
+                    <i class="closed"><img src="images/close1.png?v=af8b437eda" alt=""></i>
+                    <div class="tip">
+                        <span><img src="images/nor.png?v=ccd809919f" alt=""></span><em>恭喜您完成本节课程的学习</em>
+                    </div>
+                    <div class="realCon">
+                        <div id="webcam"></div>
+                    </div>
+                    <div class="alertF">
+                        <input type="button" class="alertBtn cancel" value='确定'>
+                    </div>
+
+                </div>
+            </div>
+            
+    <script type="text/javascript" src="js/jquery/jquery.min.js?v=b2efb4de6a"></script>
+    <script type="text/javascript" src="js/scriptcam/swfobject.js?v=a58a5dab99"></script>
+    <script type="text/javascript" src="js/scriptcam/scriptcam.js?v=6617e3d4ca"></script>
+    <script type="text/javascript" src="js/jquery/divscroll.js?v=c581d027eb"></script>
+    <script type="text/javascript" src="js/video/prism-min.js?v=8f0585a85d"></script>
+    <script type="text/javascript" src="js/alert/alert.js?v=f92d748d0d"></script>
+    <!--[if lt IE 9]>
+     <script src="js/common/html5shiv.min.js?v=1087e690a7"></script>
+     <script src="js/common/respond.min.js?v=78915bb8b3"></script>
+    <![endif]-->
+    <script src="config.js?v=06fd566dc7"></script>
+    <script src="js/common/common.js?v=800f6b0ee4"></script>
+    <script src="js/page/video.js?v=661427ee56"></script>
+            
+</body>
+
+</html>

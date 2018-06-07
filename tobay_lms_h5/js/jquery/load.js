@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".fotter").load("modules/footer/footer.html")});

@@ -1,0 +1,1 @@
+var resultObj=new Object,achievement=getCookie("achievement");$("#wrapBox").css({height:"auto"}),pdLogin(),"0"==getSearch("type")?achievement>=60?($("#ok").show(),$("#ok .pointW").text(achievement)):($("#noOk").show(),$("#noOk .pointW").text(achievement)):"1"==getSearch("type")&&$("#nop").show(),$(document).attr("title","考试结果_人人创培训监管服务平台");

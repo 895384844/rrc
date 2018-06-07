@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class='indexHtml'>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <link rel="stylesheet" href="../css/flexible.css?v=2f3507b9f0">
+</head>
+    
+<body>
+
+<div class="registerBox">
+	<div class="shadow"></div>
+	<div class="registerCon">
+		<h3>注册协议</h3>
+		<i class="close"></i>
+		<div class="con">
+			<p> “法律百科”所提供的各项服务的所有权和运作权属于其运营商。用户必须同意下述所有服务条款并完成注册程序，才能成为“法律百科”的正式会员并使用“法律百科”提供的各项服务。服务条款的修改权归“法律百科”运营商所有。</p>
+			<p>一、“法律百科”运用自己的操作系统，通过国际互联网络等手段为会员提供法律信息交流平台。“法律百科”有权在必要时修改服务条款，服务条款一旦发生变动，将会在重要页面上提示修改内容或通过其他形式告知会员。如果会员不同意所改动的内容，可以主动取消获得的网络服务。如果会员继续享用网络服务，则视为接受服务条款的变动。“法律百科”保留随时修改或中断服务而不需知照会员的权利。“法律百科”行使修改或中断服务的权利，不需对会员或第三方负责一、“法律百科”运用自己的操作系统，通过国际互联网络等手段为会员提供法律信息交流平台。“法律百科”有权在必要时修改服务条款，服务条款一旦发生变动，将会在重要页面上提示修改内容或通过其他形式告知会员。如果会员不同意所改动的内容，可以主动取消获得的网络服务。如果会员继续享用网络服务，则视为接受服务条款的变动。“法律百科”保留随时修改或中断服务而不需知照会员的权利。“法律百科”行使修改或中断服务的权利，不需对会员或第三方负责</p>
+
+		</div>
+	</div>
+
+</div>
+<script src='../js/app/flexible.js?v=8f16100cba'></script>
+<script src="../js/app/jquery-3.1.0.min.js?v=05e51b1db5"></script>
+    <!-- <script src="../config.js?v=06fd566dc7"></script>
+    <script src="../js/common/common.js?v=800f6b0ee4"></script> -->
+    <script>
+    $('.registerCon .close').on('click',function(){
+    	$(this).parents('.registerBox').hide();
+    })
+
+        // var zId = getSearch('teacherId');
+        // var tc_obj = new Object();
+        // tc_obj.coursewareId = zId;
+        // commonParm(tc_obj);
+        // jsonAjax(InterFace.askTeacher, tc_obj, zxInfo_fn);
+        // function zxInfo_fn(res) {
+        //     if (res.errCode == '200') {
+        //         $(".avater img").attr('src', res.tricon)
+        //         $('.tc_name').html(res.trname);
+        //         $('.tcCon').html(res.trabstract);
+
+        //     } else if (res.errCode == '306') {
+        //         $('.tcinfo').hide();
+        //         $('.nods').show();
+
+        //     }
+
+        // }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<div class="perBox">
+    <div class="perWrap_tit">
+        <ul class='tabSwitch clearfix fl'>
+            <li class="active">个人信息</li>
+            <li>社交账号</li>
+            <li>绑定银行卡</li>
+
+        </ul>
+        <a href="javascript:;" class='edit' id='edit'><i class="iconfont icon-bianji"></i>编辑</a>
+        <a href="javascript:;" class='edit' id='editBank'><i class="iconfont icon-bianji"></i>编辑</a>
+    </div>
+<div class="swCon show">
+    <div class="perWlist modifyUser">
+        <div class="perInfo formBox">
+        <ul>
+            <li>
+                <i class="iconfont icon-xingming"></i>
+                <span>姓名</span>
+                <span class='line'></span>
+                <em id='null_input'><input type="text" value="" readonly name='userName' id='userName' class='canEdit form_v' maxlength="20"></em>
+            </li>
+            <li>
+                <i class="iconfont icon-nicheng"></i>
+                <span>昵称</span>
+                <span class='line'></span>
+                <em id='null_input'><input type="text" value="" readonly name='nickName' id='nickName' class='canEdit form_v' maxlength="20"></em>
+            </li>
+            <li>
+                <i class="iconfont icon-xingbie"></i>
+                <span>性别</span>
+                <span class='line'></span>
+                <em id='sex_input'>
+                    <b>未设置</b>
+                    <p>
+                       <input type="radio" name='sex' value='1'  id='man'>男
+                        <input type="radio" name='sex' value='2' id='femal'>女
+                    </p>
+                </em>
+            </li>
+            <li>
+                <i class="iconfont icon-shouji"></i>
+                <span>手机</span>
+                <span class='line'></span>
+                <em><input type="text" value="" readonly name="staffMobile"></em>
+            </li>
+            <li>
+                <i class="iconfont icon-youxiang"></i>
+                <span>邮箱</span>
+                <span class='line'></span>
+                <em id='emaile_input'><input type="text" value="" readonly name='staffEmail' id='staffEmail' class='canEdit form_v' maxlength="50"></em>
+            </li>
+           
+            </ul>
+            <div class="passBtn alignR">
+                <a href="javascript:;" class="pBtn pBtn_blue mr7 sava">保存</a>
+                <a href="javascript:;" class="pBtn pBtn_defalut ml7 cancel">取消</a>
+            </div>
+
+        </div>
+
+
+    </div>
+  
+   <div class="perWlist modifyUser">
+        <div class="perInfo formBox">
+           <ul>
+            <li>
+                <i class="iconfont icon-xingming"></i>
+                <span>姓名</span>
+                <span class='line'></span>
+                <em id='null_input'><input type="text" value="" readonly name="userName" id='userName' class='canEdit form_v' maxlength="20"></em>
+            </li>
+             <li>
+                <i class="iconfont icon-nicheng"></i>
+                <span>昵称</span>
+                <span class='line'></span>
+                <em id='null_input'><input type="text" value="" readonly name='nickName' id='nickName' class='canEdit form_v' maxlength="20"></em>
+            </li>
+            <li>
+                <i class="iconfont icon-xingbie"></i>
+                <span>性别</span>
+                <span class='line'></span>
+                <em id='sex_input'>
+                    <b>未设置</b>
+                    <p>
+                      <input type="radio" name='sex' value='1' checked="checked" id='man' disabled class='canEdit'>男
+                        <input type="radio" name='sex' value='2' id='femal' disabled class='canEdit'>女
+                    </p>
+
+                </em>
+
+            </li>
+            <li>
+                <i class="iconfont icon-shouji"></i>
+                <span>手机</span>
+                <span class='line'></span>
+                <em><input type="text" value="" readonly name="staffMobile" ></em>
+            </li>
+            <li>
+                <i class="iconfont icon-youxiang"></i>
+                <span>邮箱</span>
+                <span class='line'></span>
+                <em id='emaile_input'><input type="text" value="" readonly name='staffEmail' id='staffEmail' class='canEdit form_v' maxlength="50"></em>
+            </li>
+            <li>
+                <i class="iconfont icon-shenfenzheng"></i>
+                <span>身份证</span>
+                <span class='line'></span>
+                <em><input type="text" value="" readonly name="staffIdCard" id='staffIdCard'></em>
+            </li>
+            <li>
+                <i class="iconfont icon-zhiwei"></i>
+                <span>职位</span>
+                <span class='line'></span>
+                <em><input type="text" value="" readonly name="staffPost" id='staffPost'></em>
+            </li>
+            <li>
+                <i class="iconfont icon-qiye"></i>
+                <span>企业</span>
+                <span class='line'></span>
+                <em><input type="text" value="" readonly name="enterpriseName" id='enterpriseName'></em>
+            </li>
+             <li class="heightAuto clearfix">
+                <i class="iconfont icon-youxiang"></i>
+                <span>用户头像</span>
+                <span class='line'></span>
+                <em id='renlian_input'>
+                    <input type="hidden" id="renlianBas" class="form_v">
+                    <img src="images/xzx.jpg" alt="" id="renlianImg">
+                    <a class="renlianBox" id='renlianBtn'>人脸识别</a>
+                    
+                </em>
+            </li>
+            </ul>
+
+        </div>
+        <div class="passBtn alignR">
+            <a href="javascript:;" class="pBtn pBtn_blue mr7 sava">保存</a>
+            <a href="javascript:;" class="pBtn pBtn_defalut ml7 cancel">取消</a>
+        </div>
+
+    </div>
+    <div class="loadings" id="userLoad"><img src="images/load.gif" alt=""></div>
+
+    </div>
+<div class="swCon">
+       
+        <div class="perInfos">
+        <div class="inner-i-box">   
+             <i class="iconfont icon-weixin"></i>
+            <p class="mr87 bind-name">微信</p>
+            <p class="mr87 bindStatus red">未绑定</p>
+            <a class="mr87 toBindwx" id="roBindWx">添加绑定</a>
+            <a class="mr87 disBindwx" id="roBindWxs">解除绑定</a>
+        </div>
+            
+        </div>
+        <div class="msg-laybox">
+            <div class="modal-backdrop"></div> 
+            <div class="msg-layer">    
+                <h3>解除绑定</h3>                
+                <p>解绑后将不能使用微信帐号登录人人创培训监管服务平台。</p>                
+                <a href="javascript:void(0)" class="js-sf-submit btn-submit">确定</a>                
+                <a href="javascript:void(0)" class="btn-close"></a>            
+            </div>
+        </div>
+    </div>
+
+<div class="swCon bankBox">
+    <div class="loadings" id="bankLoad"><img src="images/load.gif" alt=""></div>
+    <div class="reBind">
+        <h4><a href="javascript:;" class="pBtn pBtn_blue mr7" id="tobindBank">立即绑定银行卡</a></h4>
+        <div class="hadBank">  
+            <p><img src="" alt="" id="myBankLogo"></p> 
+            <div class="perInfo bindBank">
+               <ul>
+                <li class="clearfix">
+                    <i>开户行</i>
+                    <span class='line'></span>
+                    <em id='null_input'><input type="text" value="" readOnly name="banks" id='banks' class='canEdit form_v' maxlength="20"></em>
+                </li>
+                 <li class="clearfix">
+                    <i>账户名称</i>
+                    <span class='line'></span>
+                    <em id='null_input'><input type="text" value="" readOnly name='bankName' id='bankName' class='canEdit form_v' maxlength="20"></em>
+                </li>
+                 <li class="clearfix">
+                    <i>账号</i>
+                    <span class='line'></span>
+                    <em id='null_input'><input type="text" value="" readOnly name='postBank' id='postBank' class='canEdit form_v'></em>
+                </li>
+                 
+            </ul>
+            
+        </div>
+            <input type="hidden" id="postBankhiden">
+        </div>
+    </div>
+    <div class="oBind">
+        <h4>选择银行</h4>
+        <ul class="bankBox_ul clearfix"></ul>
+        <div class="perInfo bindBank show">
+               <ul>
+                <li class="clearfix">
+                    <i>开户行</i>
+                    <span class='line'></span>
+                    <em id='bankBox_bank'><input type="text" value=""  id='bank_bank' class='editInput form_v' placeholder="请输入开户行"></em>
+                </li>
+                 <li class="clearfix">
+                    <i>账户名称</i>
+                    <span class='line'></span>
+                    <em id='bankBox_name'><input type="text" value="" id='bank_name' class='editInput form_v' placeholder="请填写账户名称"></em>
+                </li>
+                 <li class="clearfix">
+                    <i>账号</i>
+                    <span class='line'></span>
+                    <em id='bankBox_post'><input type="text" value="" id='bank_post' class='editInput form_v' placeholder="请填写账号"></em>
+                </li>
+                 <li class="clearfix">
+                    <i>&nbsp;&nbsp;</i>
+                    <em id='null_input'>
+                        <div class="passBtn alignC">
+                            <a href="javascript:;" class="pBtn pBtn_blue mr7" id="savemyBank">保存</a>
+                            <a href="javascript:;" class="pBtn pBtn_defalut ml7" id="bacnkCancel">取消</a>
+                        </div>
+                    </em>
+                </li>
+            </ul>
+            <input type="hidden" id="bank_post_hiden">
+        </div>
+    </div>
+
+</div>
+</div>
+<div id='camerBox' class='alertBox'>
+            <div class="shadow"></div>
+            <div class="alertCon camCon">
+                <i class="closed"><img src="images/close1.png" alt=""></i>
+                <div class="alert_l">
+                    <div class="realCon">
+                        <div id="webcam"></div>
+                    </div>
+                    <div class="reTip"><img src="images/nor.png" alt="">无法拍照？<a href="vidTip.html" target="_blank">点此查看捕捉人像识别失败解决方案。</a></div>
+                    <div class="alertFooter">
+                        <input type="button" class="alertBtn" id='pickCamer' value='拍照'>
+                    </div>
+                </div>
+                <div class="alert_r">
+                    <div class="tip">
+                        <span class='num'>1</span><em>靠近摄像头，将正脸准对屏幕中央，保持画面光线充足</em>
+                    </div>
+                    <div class="tip">
+                        <span class='num'>2</span><em>点击“拍照”后，请耐心等待。</em>
+                    </div>
+                    <div class="tip avaBz">
+                        <img src="images/bz.png" alt="" id='bz'>
+                        <div class="bigImg">
+                            <img src="images/bz.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+<input type="hidden" id="selectBankId">
+<script src='js/jquery/bankInput.js?v=51816760b2'></script>
+<script src='js/page/info.js?v=31ca8a4893'></script>
+
+

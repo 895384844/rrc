@@ -1,0 +1,145 @@
+
+<div class="perBox">
+    <div class="perWrap_tit">
+        <span class="colgreen">上传课程</span>
+    </div>
+      <div class="perWlist uploadSection addChapter">
+   
+        <div class="passBox" id='mpss_ie'>
+            <label for=""><em>请输入课件名称:</em><span id='pass_init'><input type="text" id="oldPass" class='form_mpss'></span></label>
+            <label for=""><em>请上传课程封面:</em><span id='pass_input'><input type="text" id="password" class='form_mpss'></span></label>
+            <label for=""><em>请输入课件介绍:</em><span id='confir_input'><input type="text"  id="confirm_password" class='form_mpss'></span></label>
+            <div class="passBtn">
+                <a href="javascript:;" class="pBtn pBtn_blue mr7" id='saves'>保存</a>
+            </div>
+        </div>
+    
+        <div class="passBox show" id='mpss_no'>
+            <span id='chapter_name'><input type="text" placeholder="请输入课件名称" id="chapterName" class='form_mpss form_v'></span>
+            <span id='chapter_poster' class="clearfix">
+            	<input type="text" placeholder="请上传课程封面" readOnly id="corsePoster" class='form_mpss form_v'>
+				<span class="addFile">
+					<input type="file" id="tp" name="file" onchange="fileType(this)">
+					<img src="images/bank_ico3.png" alt=""><i>点击添加图片</i>
+				</span>
+				<input type="hidden" id="posterImg">
+				<input type="hidden" id="corseType">
+
+
+            </span>
+            <span id='confir_input'><textarea name="" id="corseIntroduce" cols="30" rows="10" placeholder="请输入课件介绍"></textarea></span>
+            <div class="passBtn">
+                <button class="pBtn pBtn_blue mr7" id='next'>下一步</button>
+            </div>
+        </div>
+        
+    </div>
+<input type="hidden" id="uploadAuth">
+<input type="hidden" id="uploadAddress">
+<input type="hidden" id="VideoId">
+
+
+    <div class="exambox hide">
+		
+		<form>
+			<div class="ex_adm_paper">
+				<!-- <div class="ex_adm_paper_head">
+					 <h1></h1>
+					<input type="hidden" name="COURSEWARE_ID" id="COURSEWARE_ID" value=""> 
+					<input type="hidden" name="COURSEWARENAME" id="COURSEWARENAME" value="">
+				</div> -->
+				<div class="ex_adm_paper_head">
+					 <h1>lancer</h1>
+					<input type="hidden" name="COURSEWARE_ID" id="COURSEWARE_ID" value="bd37c1e2555e4b539279ce7b68325a6e"> 
+					<input type="hidden" name="COURSEWARENAME" id="COURSEWARENAME" value="lancer">
+				</div>
+
+				
+
+				</div>
+				<div class="ex_adm_paper_tool">
+					<button class="ex_btn ex_btn_main" type="button" onclick="tmPaper.addSection()"><img src="images/bank_ico5.png" alt="">增加章节</button>
+				</div>
+				<div class="ex_adm_paper_body">
+					<input type="hidden" id="itemId">
+					<ul class="ex_adm_paper_body_section ui-sortable show" id="paper_sections">
+					</ul>
+				</div>
+				<div class="ex_adm_paper_foot">
+					<button class="pBtn pBtn_blue mr7" type="button" id="saveAllitem" onclick="save(this);">提交</button>
+				</div>
+			</div>
+		</form>
+
+
+	</div>
+    
+</div>
+<!-- 弹窗部分 -->
+<div class="alertBox alertBox2 editItem uploadSection" id="editChapter">
+	<input type="hidden" id="checkItemid">
+	<div class="shadow"></div>
+	<div class="alertCon">
+		<i class="closed"><img src="images/bank_ico4.png" alt=""></i>
+		<h4>编辑新章节</h4>
+		<div class="passBox itemBox show">
+            <span id='item_init'><input type="text" placeholder="请输入章节名称" readOnly id="itemName" ></span>
+            <span id='corName_input'><input type="text" placeholder="请输入课程名称" id="corName" class='form_mpss'></span>
+            <span id='corIntroduce_input'><input type="text" placeholder="请输入课程介绍" id="corIntroduce" class='form_mpss'></span>
+
+            <span id='corseVid_input' class="clearfix"><input type="text" placeholder="请上传视频" readOnly id="corseVid" class='form_mpss'>
+				<span class="addFile">
+					<input type="file" id="tpupload" name="file" onchange="changeUpload(event)">
+					<img src="images/bank_ico3.png" alt=""><i>点击选择视频</i>
+				</span>
+				<a href="javascript:;" class="pBtn pBtn_blue upBtn" id='upvBtn' onclick="start()">开始上传</a>
+
+            </span>
+            <span>
+            <div class="progress box">
+				    	<div class="ok"></div>			
+				    	<div class="tbox">			
+				        	<div class="tiao bar"></div>			
+				   		</div>
+					</div>
+
+
+					</span>
+            <div class="passBtn clearfix">
+                <a href="javascript:;" class="pBtn pBtn_blue mr7" id='itemSave'>保存</a>
+                <a href="javascript:;" class="pBtn pBtn_defalut ml7 cancels" id='itemCancel'>取消</a>
+            </div>
+        </div>
+	</div>
+
+</div>
+<div class="alertBox alertBox2 editItem uploadSection" id="editCourse">
+	<input type="hidden" id="checkcorid">
+	<div class="shadow"></div>
+	<div class="alertCon">
+		<i class="closed"><img src="images/bank_ico4.png" alt=""></i>
+		<h4>编辑课程</h4>
+		<div class="passBox itemBox show">
+            <span id='corName_input'><input type="text" placeholder="请输入课程名称" id="corName" class='form_mpss'></span>
+            <div class="passBtn clearfix">
+                <a href="javascript:;" class="pBtn pBtn_blue mr7" id='editSave'>保存</a>
+                <a href="javascript:;" class="pBtn pBtn_defalut ml7 cancels">取消</a>
+            </div>
+        </div>
+	</div>
+
+</div>
+<div class="alertBox alertBox2 binbBk" id="tjBox">
+  <div class="shadow"></div>
+  <div class="alertCon">
+    <i class="closed"><img src="images/bank_ico4.png" alt=""></i>
+    <div class="tixinBox">
+      <h4><img src="images/bank_ico2.png" alt=""></h4>
+      <p class="ti_tip">恭喜您的课程已经提交成功，后台人员正在审核，请耐心等候，您可以前往“我的上传”查看审核状态，是否立即前往</p>
+      <p><a href="javascript:;" class="txBtn bi_upload">确定</a></p>
+    </div>    
+
+  </div>
+
+</div>
+<script src='js/page/upload.js?v=704baee70b'></script>

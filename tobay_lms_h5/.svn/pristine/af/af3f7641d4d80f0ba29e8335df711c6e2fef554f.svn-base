@@ -1,0 +1,26 @@
+<div class="fotter">
+    <div class="fotBox clearfix">
+        <div class="fotBoxL fl">
+            <img src="images/flogo.png" alt="">
+        </div>
+        <div class="fotLine fl"></div>
+        <div class="fotBoxR fl">
+               <p class='plink'>
+                    <a href="about.html#/about/about">关于我们</a><span class='gap'></span>
+                    <a href="about.html#/about/contract">联系我们</a><span class='gap'></span>
+                    <a href="about.html#/about/question">常见问题</a><span class='gap'></span>
+                    <a href="about.html#/about/company">企业合作</a><span class='gap'></span>
+                    <a href="about.html#/about/disclaimer">免责声明</a>
+
+                </p>
+                <div class="copright">
+                    <p><span>24小时服务热线：<em id='hotline'>029-81338333</em></span><span>Email：renrenchuang@qq.com</span>
+                        <span>Copyright2017   人人创培训监管服务平台版权所有</span><span class="mrN">陕ICP备15010675号-2</span></p>
+                    
+                </div>
+        </div>
+        
+    </div>
+  
+
+</div>

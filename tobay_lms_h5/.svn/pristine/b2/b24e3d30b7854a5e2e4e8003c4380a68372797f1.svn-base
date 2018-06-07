@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="fav.png">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache" content="no-cache">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css?v=7718052b46" media="screen" />
+    <link rel="stylesheet" href="css/reset.css?v=cc3c24d88f">
+    <link rel="stylesheet" href="font/iconfont.css?v=ff28547f38">
+    <link rel="stylesheet" href="css/style.css?v=863e8bbd70">
+    <link rel="stylesheet" href="css/alert.css?v=5b585de169">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <p class="fl logoBox">
+                    <a href='index.html'> <img src="images/newLogo.png?v=947c3cac96" alt=""></a>
+                </p>
+                <div class="fl tabBox" id='tabB'>
+
+                    <ul>
+                        <li><a href='index.html'>首页</a></li>
+                        <li><a href='lesson.html'>课程</a></li>
+                        <li><a href='zixun.html'>政策解读</a></li>
+                        <li><a href='about.html#/about/about'>关于我们</a></li>
+                    </ul>
+                </div>
+
+                <div class="header_r fr">
+                    <a href="entro.html" target="_blank" class="noBor fl tFunBtn">企业/机构入口</a>
+                    <i class='gap'></i>
+                    <div class="toGwc fl">
+                        <li class="shop-cart" id="shop-cart">
+
+                            <a href="gwc.html" class="shop-cart-icon" target="_blank">
+                                <span class="iconfont icon-gouwuche"></span><span>购物车</span><span class="shopping_icon js-cart-num">0</span>
+                            </a>
+                            <div class="my-cart" id="js-my-cart">
+                                
+                                <div class="cart-title-box clearfix">
+                                    <h2 class="fl">我的购物车</h2>
+                                    <h5 class="fr">已加入<span class="js-incart-num">0</span>门课程</h5>
+                                </div>
+                               
+                                <div class="cart-wrap">
+                                    <div class="clear-cart"> 
+                                            <span class="cartIcon icon-shopping-cart"></span>
+                                            <h3>购物车里空空如也</h3>    
+                                            <div class="text">快去选购你中意的课程</div>                                            
+                                            <p><a class="go-link" href="lesson.html?ftype=1" target="_blank">选择课程</a></p>                                            
+                                    </div>     
+                                    <div class="cart-wrap-box" id="js-card-ul">
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                                <div class="more-box clearfix">
+                                    <div class="l show-box"><span class="text"><a class="orderCenter" target="_blank">我的订单中心</a></span></div>
+                                    <a href="gwc.html" target="_blank" class="fr moco-btn moco-btn-red go-cart">去购物车结算</a>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </div>
+                    <i class='gap'></i>
+                    <div class="noLogin">
+                        <a href="login.html" class="login fl tFunBtn">登录</a>
+                        <i class='gap'></i>
+                        <a href="register.html" class="fl tFunBtn">注册</a>
+                    </div>
+                    <div class="hasLogin">
+                          <a href="notice.html"><span class='iconfont icon-lingdang fl'><i id='count'></i></span></a>
+                          <div class="fr avatar" id="headAva">
+                              <a class='toMy'><img src="" class="uerAvater"></a>
+                              <div class="g-user-card">
+                                  <div class="card-top clearfix">                            
+                                      <a href="javascript:;" class="l">
+                                          <img src="">
+                                      </a>                            
+                                  <div class="card-top-right-box l">                                
+                                      <a href="javascript:;"><span class="name text-ellipsis"></span></a>                                
+                                                           
+                                  </div>                       
+                                </div>
+                                 <div class="user-center-box">                            
+                                      <ul class="clearfix">                                
+                                            <li class="l"><a class='toMy' target="_blank"><span class="iconfont icon-gerenzhongxin"></span>个人中心</a></li>                                
+                                            <li class="l"><a href="myOrder.html#/order/order" target="_blank"><span class="iconfont icon-dingdan"></span>订单中心</a> </li>
+                                      </ul>                       
+                                 </div>
+                                 <div class="card-sets clearfix"><a href="login.html">安全退出</a></div>
+
+                              </div>
+                          </div>
+                      </div>
+
+                </div>
+              
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="lessonBox" ms-controller="lessonInfo">
+        <div class="lesson_s1">
+            <div class="breadcram">当前位置：首页 / 课程分类 / <span class='curName'></span></div>
+            <img src="images/ke.png?v=4d16d75528" class='bg'>
+            <div class="lesson_shorg clearfix">
+                <div class="fl">
+                    <img id='curl' alt="">
+
+                </div>
+                <div class="fr">
+                    <h3 class='curName'></h3>
+                    <p class="study_show">
+                        <span><i class="iconfont icon-yanjing"></i><i>浏览量</i><i id='p_pv'></i></span>
+                        <span><i class="iconfont icon-shoucang"></i><i>收藏量</i><i id='p_col'></i></span>
+                        <span><i class="iconfont icon-xing"></i><i>评分</i><em id='p_scor'></em></span>
+                    </p>
+                    <p class="desc">
+                        课程简介：<span id='introH'></span>
+
+                    </p>
+                    <p class='doctor'>
+                        <span><i>主讲人：</i><em id='mainTeach'></em></span>
+                        <span><i>课程时长：</i><em id="corHour"></em></span>
+                    </p>
+                    <p class="function_area start_study">
+                        <span id='zongL'>
+                        <a class="usualBtn goBtn on">开始学习</a>
+                    </span>
+                        <a href="javascript:;" class="usualBtn shBtn activs" ms-if="collectType==1" id='cancelsc'><i class="iconfont icon-shoucang"></i>已收藏</a>
+                        <a href="javascript:;" class="usualBtn shBtn" ms-if="collectType==2" id='sc'><i class="iconfont icon-shoucang"></i>收藏</a>
+                    </p>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="lesson_s2 clearfix">
+            <div class="lesson_sl fl col-lg-9">
+                <ul class="lessTab clearfix">
+                    <li class='active'>章节目录</li>
+                    <li>课程评论</li>
+
+                </ul>
+                <div class="lessCon">
+                    <div class="lesConlist show">
+                        <div class='itemList' ms-repeat="itemList">
+                            <li><span>{{el.chaptername}} </span> <span class='fr toggleBtn' ms-click="toggleShow(this)"><em>收起</em><em class='iconfont icon-zhankai'></em></span></li>
+                            <ul>
+                                <li ms-repeat-item="el.courseList" ms-click="toVideo(item.coursewareId,item.courseId,item.courseaddr)">
+                                    <i class='iconfont icon-dot colgreen' ms-if="item.learnType=='2'||item.learnType=='3'"></i>
+                                    <i class='iconfont icon-dot colred' ms-if="item.learnType=='1'"></i>
+                                    <span>{{item.coursename}}</span> <em>{{item.coursedate|FM}}</em>
+                                    <a class='usualBtn statusBtn' ms-if="hasUser==true&&item.learnType=='1'">已完成</a>
+                                    <a class='usualBtn statusBtn active' ms-if="hasUser==true&&item.learnType=='2'">继续学习</a>
+                                    <a class='usualBtn statusBtn green' ms-if="hasUser==true&&item.learnType=='3'">开始学习</a>
+
+
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <div class="lesConlist">
+                        <div id="discus-publish" class='publist' ms-if="hasUser==true">
+                            <div class="innerBox clearfix">
+                                <a class="user-head">
+                                    <img src="" alt="" class="uerAvater">
+                                </a>
+                                <div class="fl user-r">
+                                    <h4>觉得课程怎么样？打个分吧~</h4>
+                                    <div class='disscuss'><span class="star"></span><em class='function-hint'>5</em><em>分</em></div>
+                                    <p><textarea name="" id="comment" rows="3" placeholder="请输入您对于本门课程的评论吧~"></textarea></p>
+
+                                </div>
+
+                                <p class='fr usualBtn publishBtn'>发表评论</p>
+
+                            </div>
+
+                        </div>
+                        <div class="other_pub">
+                            <div class='publist clearfix' ms-repeat="commetList">
+                                <div class="innerBox clearfix">
+                                    <a class="user-head fl">
+                                        <img ms-if='el.userImg!==null&&el.userImg!=="null"&&el.userImg!==""' ms-attr-src="{{el.userImg}}">
+                                        <img ms-if='el.userImg==null||el.userImg=="null"||el.userImg==""' src="images/ava1.png?v=75a6174436">
+                                    </a>
+                                    <div class="user-r fl">
+                                        <h4><i>{{el.userName}} </i><span>评分<em>{{el.courseScore}}</em></span><span class='fr time'>{{el.commentDate|UnixToDate}}</span></h4>
+                                        <p>{{el.commentContent}}</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <span class='nodata'>暂无评论</span>
+
+                        </div>
+                        <div class="list_lb">
+                            <ul class="pages page_green sml fr" id="page_m"></ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="lesson_sr fr col-lg-2">
+                <div class="teacher_intro" id="teacher_intro">
+                    <img alt="">
+                    <h5></h5>
+                    <p></p>
+                </div>
+                <div class="suggest">
+                    <h3 class='list_rt'>为您推荐</h3>
+                    <ul class="suggestlist" id='foUsugg'></ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="fotter" style="margin-top:60px;"></div>
+    <script src="js/avalon/avalon.js?v=8dd1e8f500"></script>
+    <script src="js/jquery/jquery.min.js?v=b2efb4de6a"></script>
+    <script src='js/fenye/jqPaginator.js?v=8a570b62bb'></script>
+    <script src="js/page/raty.js?v=d2b7d0ce79"></script>
+    <script src="js/jquery/load.js?v=821a4a6380"></script>
+    <script src="js/alert/alert.js?v=f92d748d0d"></script>
+    <!--[if lt IE 9]>
+    <script src="js/jquery/ajaxTransport.js?v=9e209f6c54"></script>
+     <script src="js/common/html5shiv.min.js?v=1087e690a7"></script>
+     <script src="js/common/respond.min.js?v=78915bb8b3"></script>
+    <![endif]-->
+      <script src="config.js?v=06fd566dc7"></script>
+    <script src="js/common/common.js?v=800f6b0ee4"></script>
+    <script src="js/page/shou_fn.js?v=6db9759360"></script>
+    <script src="js/page/lessonInfo.js?v=ce3203cdf9"></script>
+   
+
+</body>
+
+</html>
